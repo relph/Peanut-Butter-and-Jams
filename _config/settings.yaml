@@ -13,7 +13,7 @@
 ###########################################################################################
 
 # Enter your license key
-_license_key:
+_license_key: bf645f30-2742-4531-b94a-bdf8f55124e4
 
 _language: en
 
@@ -21,16 +21,16 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: Peanut Butter & Jams
 
 # Change the folder name for your content directory
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://statamic.com
+_site_url: http://pbj.ms
 
 # Folder name of your desired theme
-_theme: acadia
+_theme: pbj
 
 # Entries should include timestamp YYYY-MM-DD-HHII
 _entry_timestamps: false
@@ -154,7 +154,7 @@ _admin_theme: ascent
 
 # Customize which pages show in the control panel
 _admin_nav:
-  dashboard: false
+  dashboard: true
   pages:     true
   members:   true
   account:   true
