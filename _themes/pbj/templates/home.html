@@ -1,15 +1,16 @@
 
-	
-	<div class="small-12 small-centered medium-8 large-8 large-centered columns">
-	{{ content }}
-	</div>
 
-	<div class="entries">
-	{{ entries:listing folder="tunes" limit="1"}}
+	<div class="medium-8 medium-centered large-8 large-centered columns">
 
-	<h1><a href="{{ url }}">{{ title }}</a> </h1>
-	<h5>{{ date }}</h5>
-	{{ content }}
+		<div class="entries">
+		{{ entries:listing folder="tunes"}}
 
-	{{ /entries:listing }}
+		<h1><a href="{{ url }}">{{ title }}</a> </h1>
+		<h5>{{ date }}</h5>
+		<div class="content">
+		{{ content }}
+		</div>
+		{{ /entries:listing }}
+		</div>
+
 	</div>
