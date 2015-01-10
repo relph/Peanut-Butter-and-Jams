@@ -18,6 +18,22 @@ function onYouTubeApiLoad() {
   // See http://goo.gl/PdPA1 to get a key for your own applications.
   gapi.client.setApiKey('AIzaSyCNbbDYwUmK9waI1dcOPvSfenMSxzfr54s');
 
-  // Add code here to test out showResponse():
+  search();
+}
 
+function search() {
+  // Use the JavaScript client library to create a search.list() API call.
+  var request = gapi.client.youtube.search.list({
+    part: 'snippet',
+    q: 'HAIM'
+  });
+
+  // Send the request to the API server,
+  // and invoke onSearchRepsonse() with the response.
+  request.execute(onSearchResponse);
+}
+
+// Called automatically with the response of the YouTube API request.
+function onSearchResponse(response) {
+  showResponse(response);
 }
