@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 # For allow users create an account
 gem 'devise', '~> 3.3.0'
+
+# HAML
+gem "haml-rails"
