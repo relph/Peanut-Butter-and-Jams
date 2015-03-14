@@ -15,9 +15,14 @@
         %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }
 %br
   = link_to 'New Link', new_link_path
-  %br
-    /
-      <p>Youtube response:</p>
-      <pre id="response"></pre>
-    %p Soundcloud response:
-    %ul#results
+
+-# <p>Youtube response:</p>
+-# <pre id="response"></pre>
+
+%input.search{:type => "text", :value => "Find a song"}
+
+%input#loadTracks.button.big{:type => "button", :value => "Get hottest track"}/
+#track
+
+%p Soundcloud response:
+%ul#results
