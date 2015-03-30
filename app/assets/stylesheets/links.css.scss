@@ -1,3 +1,78 @@
 // Place all the styles related to the Links controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home-container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  .logo {
+    background: image-url("logo.svg") top center no-repeat;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  input {
+    height: 60px;
+    width: 100%;
+    border-radius: 60px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin:0 0 30px;
+  }
+
+  input[placeholder] {
+    color: #FFF;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  button {
+    height: 60px;
+    width: 200px;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+
+    &.spotify {
+      background: #81b71a;
+      border: 0;
+      transition: all .3 ease-in-out;
+
+      &:hover {
+        background-color: #72a315;
+      }
+    }
+
+    &.soundcloud {
+      background: #ff8800;
+      border: 0;
+
+      &:hover {
+        background-color: #e67b00;
+      }
+    }
+
+    &.rdio {
+      color: #0178c1;
+      background: #fff;
+      border: 0;
+
+      &:hover {
+        background-color: #e1f4ff;
+      }
+    }
+  }
+}

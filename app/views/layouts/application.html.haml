@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Peanut Butter & Jams
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    %script{:src => "http://connect.soundcloud.com/sdk.js"}
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %script{:src => "https://apis.google.com/js/client.js?onload=onClientLoad", :type => "text/javascript"}
+    / jQuery
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+    / Flight release
+    %script{:src => "http://flightjs.github.io/release/latest/flight.min.js"}
+    %script{:src => "http://fb.me/react-with-addons-0.12.2.min.js"}
+    = csrf_meta_tags
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400,700", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    - flash.each do |name, msg|
+      = content_tag(:div, msg, class: "alert alert-#{name}")
+    = yield
