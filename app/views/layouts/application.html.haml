@@ -12,6 +12,7 @@
     %script{:src => "http://flightjs.github.io/release/latest/flight.min.js"}
     %script{:src => "http://fb.me/react-with-addons-0.12.2.min.js"}
     = csrf_meta_tags
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400,700", :rel => "stylesheet", :type => "text/css"}/
   %body
     - flash.each do |name, msg|
       = content_tag(:div, msg, class: "alert alert-#{name}")

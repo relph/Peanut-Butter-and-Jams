@@ -43,3 +43,8 @@ gem 'devise', '~> 3.3.0'
 
 # HAML
 gem "haml-rails"
+
+# Soundcloud
+gem "soundcloud"
+
+gem "foundation"

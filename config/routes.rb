@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # pbj.ms
   root to: "links#index"
 
+  get '/tunes' => 'tunes#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
